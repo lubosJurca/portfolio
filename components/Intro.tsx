@@ -1,8 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import portrait from "@/public/portrait.jpg";
+import Link from "next/link";
+
+// framer motion
 import { motion } from "framer-motion";
+
+// images
+import portrait from "@/public/portrait.jpg";
+
+// react icons
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
 
 const Intro = () => {
   return (
@@ -35,7 +45,8 @@ const Intro = () => {
           </motion.span>
         </div>
       </div>
-      <motion.p
+
+      <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-center"
@@ -44,7 +55,49 @@ const Intro = () => {
         <span className="font-bold">Frontend Developer.</span> I enjoy building{" "}
         <span className="italic">sites and apps.</span> My focus is{" "}
         <span className="underline">React(Next.js).</span>
-      </motion.p>
+      </motion.h1>
+
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1,
+        }}
+        className="flex flex-col sm:flex-row justify-center items-center gap-2 text-lg font-medium"
+      >
+        <Link
+          className="group flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition bg-gray-900 text-white px-7 py-3"
+          href="#contact"
+        >
+          Contact me here{" "}
+          <BsArrowRight className="opacity-50 group-hover:translate-x-1 transition " />{" "}
+        </Link>
+
+        <a
+          className="group flex items-center justify-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition bg-white text-gray-900 px-7 py-3 border border-black/10"
+          href="/CV.pdf"
+          download
+        >
+          Download CV{" "}
+          <HiDownload className="opacity-50 group-hover:translate-x-1 transition" />{" "}
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/lubo%C5%A1-jur%C4%8Da-364262237"
+          target="_blank"
+          className="flex items-center justify-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition bg-white text-gray-900 text-[1.25rem] p-4 border border-black/10"
+        >
+          <BsLinkedin />
+        </a>
+
+        <a
+          href="https://github.com/lubosJurca"
+          target="_blank"
+          className="flex items-center justify-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition bg-white text-gray-900 text-xl p-4 border border-black/10"
+        >
+          <FaGithubSquare />
+        </a>
+      </motion.div>
     </section>
   );
 };
