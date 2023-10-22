@@ -13,10 +13,13 @@ import portrait from "@/public/portrait.jpg";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
 
 const Intro = () => {
+  const { ref } = useSectionInView("Home", 0.5);
+
   return (
-    <section className="mb-28 max-w-[50rem]">
+    <section ref={ref} className="mb-28 max-w-[50rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
