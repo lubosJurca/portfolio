@@ -17,3 +17,7 @@ export type ActiveSectionContextType = {
     setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
   };
   
+export type ContactFormProps = {
+  message: string;
+  email: string;
+};
