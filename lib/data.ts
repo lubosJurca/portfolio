@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import audiophile from "@/public/audiophile.png"
-import linkedIn from "@/public/Linkedin_Clone.png"
-import photosnap from "@/public/photosnap.png"
+import audiophile from "@/public/audiophile.png";
+import linkedIn from "@/public/Linkedin_Clone.png";
+import portfolio from "@/public/portfolio.png";
 
 export const links = [
   {
@@ -35,52 +35,52 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Skillmea",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I enrolled course to learn  HTML, CSS and JavaScript. I own a certificate for completing the course.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "FreeCodeCamp",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I took a course to learn Responsive Web Design. I own a certificate for completing the course.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Scrimba",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I followed a course FrontEnd Path with focus on React. I own a certificate for completing the course.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022-2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Audiophile",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "I created this e-commerce site for a challenge. You can add products to the cart and proceed to checkout. It's fully responsive.",
+    tags: ["React", "React Router", "Responsive design", "Firebase"],
     imageUrl: audiophile,
+    linkUrl: "https://audiophile-ecommerce-tan.vercel.app/",
   },
   {
-    title: "rmtDev",
+    title: "LinkedIn Clone",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "I created this LinkedIn clone for a challenge. It's fully responsive. Redux for state management and Firebase for authentication.",
+    tags: ["React", "Firebase", "Redux", "Material UI", "Tailwind"],
     imageUrl: linkedIn,
+    linkUrl: "https://linkedin-2-0-one.vercel.app/",
   },
   {
-    title: "Word Analytics",
+    title: "Portfolio",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: photosnap,
+      "I created this portfolio to showcase my skills. It's fully responsive.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind", "Framer-motion"],
+    imageUrl: portfolio,
+    linkUrl: "https://portfolio-steel.vercel.app/",
   },
 ] as const;
 
@@ -90,18 +90,11 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "Firebase",
+  "Figma",
   "Next.js",
-  "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;

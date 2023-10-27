@@ -7,7 +7,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 // images
-import portrait from "@/public/portrait.jpg";
+import portrait from "@/public/portrait.png";
 
 // react icons
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -19,7 +19,7 @@ const Intro = () => {
   const { ref } = useSectionInView("Home", 0.5);
 
   return (
-    <section ref={ref} className="mb-28 max-w-[50rem]">
+    <section ref={ref} className="mb-28 max-w-[50rem] h-screen">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -77,7 +77,7 @@ const Intro = () => {
         </Link>
 
         <a
-          className="group flex items-center justify-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition bg-white text-gray-900 px-7 py-3 border border-black/10"
+          className="group flex items-center justify-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition bg-white text-gray-900 px-7 py-3 border border-black/10 dark:bg-white/10 dark:text-white/80 "
           href="/CV.pdf"
           download
         >
@@ -88,7 +88,7 @@ const Intro = () => {
         <a
           href="https://www.linkedin.com/in/lubo%C5%A1-jur%C4%8Da-364262237"
           target="_blank"
-          className="flex items-center justify-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition bg-white text-gray-900 text-[1.25rem] p-4 border border-black/10"
+          className="flex items-center justify-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition bg-white text-gray-900 text-[1.25rem] p-4 border border-black/10 dark:bg-white/10 dark:text-white/80"
         >
           <BsLinkedin />
         </a>
@@ -96,7 +96,7 @@ const Intro = () => {
         <a
           href="https://github.com/lubosJurca"
           target="_blank"
-          className="flex items-center justify-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition bg-white text-gray-900 text-xl p-4 border border-black/10"
+          className="flex items-center justify-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition bg-white text-gray-900 text-xl p-4 border border-black/10 dark:bg-white/10 dark:text-white/80"
         >
           <FaGithubSquare />
         </a>
