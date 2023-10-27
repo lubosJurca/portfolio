@@ -80,7 +80,7 @@ export const projectsData = [
       "I created this portfolio to showcase my skills. It's fully responsive.",
     tags: ["React", "Next.js", "Typescript", "Tailwind", "Framer-motion"],
     imageUrl: portfolio,
-    linkUrl: "https://portfolio-steel.vercel.app/",
+    linkUrl: "https://personal-portfolio-taupe-phi.vercel.app/",
   },
 ] as const;
 
