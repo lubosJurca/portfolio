@@ -31,9 +31,9 @@ const About = () => {
         feeling of finally figuring out a solution to a problem. My core stack
         is{" "}
         <span className="font-medium">
-          React, Firebase and Tailwind CSS
+          React, Firebase and Tailwind CSS.
         </span>
-        . I am also familiar with TypeScript and Next.js. I am always looking to
+         I am also familiar with TypeScript and Next.js. I am always looking to
         learn new technologies. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a frontend
         developer.
