@@ -22,7 +22,7 @@ const Contact = () => {
       transition={{ duration: 1 }}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-gray-700 -mt-4 dark:text-white/80">
+      <p className="text-gray-700 -mt-4  dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:lubos.jurca@gmail.com">
           lubos.jurca@gmail.com
